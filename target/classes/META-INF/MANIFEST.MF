@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1635499672222
+Build-Jdk: 1.8.0_282
+Built-By: shchavan
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-ManifestVersion: 2
+Bundle-Name: OSGI Publish service
+Bundle-SymbolicName: org.example.osgi-publishservice
+Bundle-SymolicName: service
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.fusesource.example;version="1.0.0"
+Export-Service: org.fusesource.example.HelloWorldService;osgi.service.bl
+ ueprint.compname=HelloWorld
+Import-Package: org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.5.0.201709291849
